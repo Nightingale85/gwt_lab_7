@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>main.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>help</servlet-name>
+    <servlet-class>com.gwt.server.common_module.HelpServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>help</servlet-name>
+    <url-pattern>/help</url-pattern>
+  </servlet-mapping>
+</web-app>
